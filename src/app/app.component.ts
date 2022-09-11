@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarouselConfig } from 'ngx-scroll-carousel';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngx-carousel';
+  configs: CarouselConfig;
+
+  constructor() {
+    this.configs = {
+      autoplay: true,
+      controls: true,
+      controlsActiveClass: '',
+      controlsButtonClass: '',
+      controlsOverClass: '',
+      items: 2,
+      mobileGestures: true,
+      navigation: true,
+      navigationIconClass: '',
+      navigationOverClass: '',
+      responsive: [],
+      slide: 1,
+      speed: 2000
+    }
+  }
 }

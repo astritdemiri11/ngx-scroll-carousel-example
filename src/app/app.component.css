@@ -1,0 +1,26 @@
+carousel {
+  display: block;
+  width: 600px;
+  height: 300px;
+}
+
+[carouselItem]:nth-child(1) {
+  background-color: #f00;
+}
+
+[carouselItem]:nth-child(2) {
+  background-color: #0f0;
+}
+
+[carouselItem]:nth-child(3) {
+  background-color: #00f;
+}
+
+[carouselItem]:nth-child(4) {
+  background-color: #ff0;
+}
+
+[carouselItem]:nth-child(5) {
+  background-color: #f0f;
+}
+

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-carousel": {
+    "ngx-scroll-carousel": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-carousel",
+            "outputPath": "dist/ngx-scroll-carousel",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-carousel:build:production"
+              "browserTarget": "ngx-scroll-carousel:build:production"
             },
             "development": {
-              "browserTarget": "ngx-carousel:build:development"
+              "browserTarget": "ngx-scroll-carousel:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-carousel:build"
+            "browserTarget": "ngx-scroll-carousel:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b6dcc706-a08c-4e4d-9097-2d3d2fbc3028"
   }
 }
