@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarouselConfig } from 'ngx-scroll-carousel';
 
 @Component({
@@ -6,10 +6,14 @@ import { CarouselConfig } from 'ngx-scroll-carousel';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   configs: CarouselConfig;
 
   constructor() {
+    this.configs = { items: 0 };
+  }
+
+  ngOnInit() {
     this.configs = {
       autoplay: true,
       controls: true,

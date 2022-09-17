@@ -1,3 +1,4 @@
 <carousel [configs]="configs">
-  <div *ngFor="let nr of [1, 2, 3, 4, 5]" carouselItem>Item {{ nr }}</div>
+  <div *ngFor="let nr of [1, 2, 3, 4, 5, 6]" class="flower"
+    [style.backgroundImage]="'url(/assets/images/jpg/flower' + nr + '.jpg)'" carouselItem></div>
 </carousel>
