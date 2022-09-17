@@ -6,11 +6,11 @@ app-root {
 
 carousel {
   display: block;
-  width: 900px;
-  height: 300px;
+  width: 500px;
+  height: 200px;
   position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 450px);
+  top: calc(50% - 100px);
+  left: calc(50% - 250px);
 }
 
 .flower {
